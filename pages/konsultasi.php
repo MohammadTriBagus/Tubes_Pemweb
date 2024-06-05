@@ -6,15 +6,21 @@
     <title>Konsultasi Online</title>
     <link rel="stylesheet" href="../styles/style_konsultasi.css">
     <script src="../scripts/konsultasi.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        window.onload = function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const message = urlParams.get('message');
-            if (message) {
-                alert(decodeURIComponent(message));
-            }
-        };
-    </script>
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message');
+        if (message) {
+            Swal.fire({
+                title: 'Pesan',
+                text: decodeURIComponent(message),
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        }
+    };
+</script>
 </head>
 <body>
     <div class="container">
