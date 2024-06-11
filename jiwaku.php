@@ -9,13 +9,13 @@
 <body>
     <div class="container">
         <header>
-            <h1>JIWAKU</h1>
+            <h1> ARTIKEL</h1>
         </header>
         <nav>
             <ul>
                 <li><a href="jiwaku/mentalku.php">MENTALKU</a></li>
                 <li><a href="pages/artikel_satu.php">BACAANKU</a></li>
-                <li><a href="pages/artikel_satu.php">JIWAKU</a></li>
+                <li><a href="jiwaku/jiwaku.php">JIWAKU</a></li>
             </ul>
         </nav>
         <main>
